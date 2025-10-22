@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <title> 폼 만들기_설문조사 </title>
+    <link rel="stylesheet" href="css/fstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h2>설문조사</h2>
+        </header>
+
+        <main>
+            <form name="설문" action="">
+                <fieldset>
+                    <label for="">이 &nbsp; 름 : </label>
+                    <input type=“text” size=20>
+
+                    &nbsp;&nbsp; <label for="">성 &nbsp; 별 : </label>
+                    <input type=radio name=sex value=male> 남&nbsp;&nbsp; <input type=radio name=sex value=female> 여<br>
+
+                    <label for="">생년월일 : </label>
+                    <input type=“text” size=18><br>
+
+                    <label for="">이메일 : </label>
+                    <input type=email placeholder=comgild@nate.com required><br>
+
+                    <label for="">주 &nbsp; 소 : </label>
+                    <input type=“text” size=72> <br><br>
+                    <label for="">1. 당신이 가장 좋아하는 캐릭터는?(복수선택)</label><br>
+                    <input type=checkbox name=hobby1 value=v1> 농담곰 <br>
+                    <input type=checkbox name=hobby2 value=v2> 치이카와 <br>
+                    <input type=checkbox name=hobby3 value=v3> 하치와레 <br>
+                    <input type=checkbox name=hobby4 value=v4> 우사기 <br>
+                    <input type=checkbox name=hooby5 value=v5> 기타 <br><br>
+                    <!-- 여러 항목을 복수 선택할 수 있기 때문에 구분을 위해 name 속성값을 다 다르게 만들어야 함 -->
+
+                    <label for="">2. 선호하는 굿즈 디자인은?(하나선택)</label><br>
+                    <input type=radio name=alcohol value=v1> 심플하고 모던한 디자인 <br>
+                    <input type=radio name=alcohol value=v2> 캐릭터가 강조된 귀여운 디자인 <br>
+                    <input type=radio name=alcohol value=v3> 감성적이고 일러스트가 들어간 디자인 <br><br> <!-- 여러 항목중 하나의 항목만 선택할 수 있기 때문에 같은 그룹 끼리는 동일한 name 속성값 사용해야 함 -->
+
+                    <label for="">3. 가장 나왔으면 하는 굿즈는?</label>
+                    <select name="hobby" size=1>
+                        <option>스티커</option>
+                        <option>인형</option>
+                        <option selected>키링</option>
+                        <option>포토카드</option>
+                        <option>기타</option>
+                    </select><br><br>
+
+                    <label for="">4. 건의사항</label><br>
+                    <textarea name="introduction" cols=90 rows=8></textarea><br>
+
+                    <input type="submit" class="btn" value="완료">
+                    <input type="reset" class="btn" value="다시">
+                </fieldset>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
